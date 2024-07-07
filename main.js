@@ -110,6 +110,10 @@ var swiperCategories = new Swiper('.categories__container1', {
       },
 
     breakpoints: {
+        355: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+          },
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
@@ -118,9 +122,9 @@ var swiperCategories = new Swiper('.categories__container1', {
           slidesPerView: 4,
           spaceBetween: 40,
         },
-        1400: {
-          slidesPerView: 9,
-          spaceBetween: 24,
+        1800: {
+          slidesPerView: 7,
+          spaceBetween: 119,
      },
     },
 });
