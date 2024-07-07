@@ -390,7 +390,7 @@ background: var(--dark-color);
   }
 }
 
-@media (max-width:355px){
+@media (max-width:360px){
   .header .header-1 .search-form{
     position:absolute;
     top:-6rem; right:17.5rem;
@@ -716,7 +716,7 @@ background: var(--dark-color);
 @media (max-width:450px){
 
 }
-@media (max-width:355px){
+@media (max-width:360px){
   .slider{
     height: 200px;
   }
@@ -819,7 +819,7 @@ background: var(--dark-color);
   left: auto; 
 }
 
-@media (max-width:355px){
+@media (max-width:360px){
   .swiper-button-prev, .swiper-rtl .swiper-button-next{
     left: var(--swiper-navigation-sides-offset, ); right: 70px;
   }
