@@ -57,10 +57,9 @@ section1{
 
 section2{
   padding-block: 4rem;
-  
 }
 .container1 {
-  max-width: px;
+  max-width: 100px;
   margin-inline: auto;
   padding-inline: 0.75rem;
 }
@@ -71,7 +70,8 @@ section2{
 
 .section2__title {
   margin-bottom: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  padding: 0 9%;
 }
 
 .section2__title span {
@@ -147,8 +147,8 @@ section2{
 
 .header__action-btn .count {
   position: absolute;
-  top: -0.625rem;
-  right: -0.625rem;
+  top: 1.625rem;
+  right: 15.999rem;
   background-color:var(--green);
   color: var(--body-color);
   height: 18px;
@@ -156,7 +156,20 @@ section2{
   line-height: 18px;
   border-radius: 50%;
   text-align: center;
-  font-size: var(--tiny-font-size);
+  font-size: 10px;
+}
+.header__action-btn .count1 {
+  position: absolute;
+  top: 1.625rem;
+  right: 20.888rem;
+  background-color:var(--green);
+  color: var(--body-color);
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
 }
 
 .header .header-2{
@@ -307,12 +320,14 @@ background: var(--dark-color);
   color:var(--black);
   cursor: pointer;
 }
+
 #close-login-btn:hover{
   color: var(--green);
 }
 
 
 /*=============== media queries ===============*/
+
 @media (max-width:991px){
   html{
     font-size: 55%;
@@ -323,11 +338,9 @@ background: var(--dark-color);
 
   section1{
     padding:3rem 2rem;
-  }
-  
-  
-}
+  } 
 
+}
 
 @media (max-width:768px){
   html{
@@ -337,24 +350,30 @@ background: var(--dark-color);
   body {
     padding-bottom: 6rem;
   }
+
   .header .header-2{
     display: none;
   }
+
   .bottom-navbar{
     display: block;
   }
+
   #search-btn{
     display:inline-block;
   }
+
   .header .header-1{
     box-shadow: var(--box-shadow);
   }
+
   .header .header-1 .search-form{
     position:absolute;
     top:-6rem; right:17.5rem;
     width: 56%;
     box-shadow:var(--box-shadow);
   }
+  
   .header .header-1 .search-form.active{
     top:1.5rem; right:17.5rem; width: 56%;
   }
@@ -378,11 +397,31 @@ background: var(--dark-color);
     width: 50%;
     box-shadow:var(--box-shadow);
   }
+
   .header .header-1 .search-form.active{
-    top:1.5rem; right:17.5rem; width: 50%;
+    top:1rem; right:17.9rem; width: 50%;
   }
-  
+
+  .header__action-btn .count{
+    left: 334px;
+    top: 6px;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 8px;
+  }
+  .header__action-btn .count1 {
+    left: 296px;
+    top: 6px;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 8px;
+  }
 }
+
 
 /* Active link ***********************************************************/
 
@@ -719,10 +758,10 @@ background: var(--dark-color);
 
 /*=============== CATEGORIES ===============*/
 .categories {
-  overflow: hidden;
+  overflow: initial;
 }
 .categories__container1 {
-  padding: 0.5rem 8%; 
+  padding: 0.5rem 7%; 
 }
 .category__item {  
   padding: 0.625rem 0.625rem .25rem;
@@ -733,8 +772,9 @@ background: var(--dark-color);
   border-radius: 100%;
   margin-bottom: 1.25rem;
   max-width: 100%;
-  height: 13rem;
+  height: 11rem;
 }
+
 
 .category__title {
   color: black;
@@ -743,9 +783,47 @@ background: var(--dark-color);
 
 /* Swiper class */
 .swiper {
-  overflow: initial;
+ 
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+
+  top: -1.875rem;
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.swiper-button-prev {
+  
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, ); right: 210px;
+
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 9%);
+  left: auto; 
+}
+
+@media (max-width:355px){
+  .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: var(--swiper-navigation-sides-offset, ); right: 70px;
+  }
+}
 
 /*=============== PRODUCTS ===============*/
 
